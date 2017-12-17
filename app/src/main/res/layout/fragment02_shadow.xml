@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/demo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eaeaea"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textColor="#55000000"
+                android:text="Part01：阴影效果" />
+            <include layout="@layout/divider" />
+
+            <!--Part01：阴影效果-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#ffffff"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:text="2dp"
+                    android:textColor="#88000000" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#ffffff"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:text="4dp"
+                    android:textColor="#88000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#ffffff"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:text="8dp"
+                    android:textColor="#88000000" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#ffffff"
+                    android:elevation="16dp"
+                    android:gravity="center"
+                    android:text="16dp"
+                    android:textColor="#88000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textColor="#55000000"
+                android:text="Part02：父子控件高度与阴影" />
+            <include layout="@layout/divider" />
+
+            <!--Part02: 父子控件高度与阴影 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#fafafa"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:background="#ffffff"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:text="10dp\n高度比父View小"
+                    android:textColor="#88000000" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="#ffffff"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:text="10dp\n高度和父View一样高"
+                    android:textColor="#88000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textColor="#55000000"
+                android:text="Part03：高度与覆盖关系" />
+            <include layout="@layout/divider" />
+
+            <!--Part03: 高度与覆盖关系 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="#10ff0000">
+
+                <TextView
+                    android:id="@+id/tv_01"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="40dp"
+                    android:background="#03a9f4"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_02"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="140dp"
+                    android:background="#e91e63"
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="320dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_01"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:textColor="#88000000" />
+
+                    <Button
+                        android:id="@+id/bt"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="设置Z属性" />
+
+                    <EditText
+                        android:id="@+id/et_02"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:textColor="#88000000" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textColor="#55000000"
+                android:text="Part04: 轮廓(outlineProvider)--shape背景" />
+            <include layout="@layout/divider" />
+
+            <!--Part04: 轮廓(outlineProvider)shape背景 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="center_horizontal">
+
+                <!--android:outlineProvider="none"-->
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle_shape"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:outlineProvider="none"
+                    android:text="none"
+                    android:textColor="#88000000" />
+
+                <!--android:outlineProvider="background"-->
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle_shape"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:outlineProvider="background"
+                    android:text="background"
+                    android:textColor="#88000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="center_horizontal">
+
+                <!--android:outlineProvider="bounds"-->
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle_shape"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:outlineProvider="bounds"
+                    android:text="bounds"
+                    android:textColor="#88000000" />
+
+                <!--android:outlineProvider="paddedBounds"-->
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle_shape"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:outlineProvider="paddedBounds"
+                    android:text="paddedBounds"
+                    android:textColor="#88000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textColor="#55000000"
+                android:text="Part05 (1): 轮廓(outlineProvider)--图片背景" />
+
+            <include layout="@layout/divider" />
+
+            <!--Part05 (1): 轮廓(outlineProvider)图片背景 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:text="none"
+                    android:textColor="#88000000" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:outlineProvider="background"
+                    android:text="background"
+                    android:textColor="#88000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:outlineProvider="bounds"
+                    android:text="bounds"
+                    android:textColor="#88000000" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:outlineProvider="paddedBounds"
+                    android:text="paddedBounds"
+                    android:textColor="#88000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textColor="#55000000"
+                android:text="Part05 (2): 轮廓(outlineProvider)图片背景--代码设置轮廓" />
+
+            <!--Part05 (2): 代码设置轮廓 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#fff"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_circle_1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="代码设置轮廓"
+                    android:textColor="#88000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textColor="#55000000"
+                android:text="Part06: 裁剪" />
+
+            <include layout="@layout/divider" />
+
+            <!--Part06: 裁剪 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#fff"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/cut1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="#ff5722"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="原始矩形"
+                    android:textColor="#88000000" />
+
+                <TextView
+                    android:id="@+id/cut2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="#ffff5722"
+                    android:elevation="10dp"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:text="矩形剪裁成三角形"
+                    android:textColor="#88000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#fff"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/cut3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="#ff5722"
+                    android:elevation="10dp"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:text="矩形剪裁成圆形"
+                    android:textColor="#88000000" />
+
+                <TextView
+                    android:id="@+id/cut4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="#ff5722"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:elevation="10dp"
+                    android:text="剪裁成圆角矩形"
+                    android:textColor="#88000000" />
+
+                <TextView
+                    android:id="@+id/cut5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="#ff5722"
+                    android:gravity="center"
+                    android:elevation="10dp"
+                    android:textSize="14sp"
+                    android:text="剪裁成矩形（裁小）"
+                    android:textColor="#88000000" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>
