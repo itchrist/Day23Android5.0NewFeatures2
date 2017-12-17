@@ -16,7 +16,7 @@ import cn.itcast.androidl.fragment.BaseFragment;
 import cn.itcast.androidl.fragment.FragmentFactory;
 
 /**
- * 主界面
+ * 主界面21
  */
 public class MainActivity extends Activity implements DrawerLayout.DrawerListener, DrawerFragment.OnDrawerItemSelectedListener {
 
